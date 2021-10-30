@@ -5,8 +5,7 @@ const width = window.innerWidth
 export const Styles = {
     navbar: {
         position: "fixed",
-        flex: 1,
-        top: 0,
+        top: 0,    
         width: "80%",
         padding: "10px 10%",
         backgroundColor: AppColors.light,
@@ -14,6 +13,7 @@ export const Styles = {
         alignItems: "center",
         justifyContent: "space-between",
         boxShadow: "0px 0px 6px rgba(0,0,0,0.6)",
+        height: "10vh",
     },
 
     leftSide: {
@@ -21,7 +21,7 @@ export const Styles = {
     },
 
     logo: {
-        width: 80,     
+        height: "12vh",
         float: "left",
         marginRight: 20,           
     },
@@ -37,18 +37,22 @@ export const Styles = {
     menu: {
         backgroundColor: AppColors.incolor,
         color: AppColors.primary,
-        border: "1px solid black",
+        //border: "1px solid black",
+        border: "none",
+        fontSize: "2em",
         width: 50,
-        height: 50,        
+        height: 50,
+        zIndex: 10,        
     },
 
     menuContainer: {
         display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         flexDirection: "column",
         position: "absolute",
-        width: "80%",
-        right: 0,
-        top: 110,
+        width: "100%",
+        top: "0",
         height: "100vh",
         backgroundColor: AppColors.light,
     },
@@ -56,6 +60,10 @@ export const Styles = {
     navbarLink: {
         color: AppColors.dark,
         textDecoration: "none",  
-        padding: 20,      
+        padding: 20, 
+        borderBottom: `1px solid ${AppColors.main}`,
+        width: "60vw",
+        margin: 10,
+        textAlign: "center",
     }
 }

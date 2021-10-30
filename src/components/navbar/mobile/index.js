@@ -1,23 +1,17 @@
 import React, { useState, useEffect } from 'react'
+import { IoMenu, IoClose } from 'react-icons/io5';
 
 import { Styles } from "./styles"
 import LogoPng from "../../../assets/img/logo.png"
+import {} from "./styles.css"
 
 export const NavbarMobile = () => {
-    const [menuOpen, setMenuOpen] = useState(true)
+    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuStyle, setMenuStyle] = useState("menuClose") // menuClose || menuOpen
 
-    const handleMenuOptions = () => {
-        if (menuOpen) {
-            return (
-                <div style={ Styles.menuContainer }>
-                    <a style={ Styles.navbarLink } href="#">Home</a>
-                    <a style={ Styles.navbarLink } href="#">Sobre Alguém</a>
-                </div>
-            )
-        } else {
-            return (<></>)
-        }
-    }
+   useEffect(() => {
+       menuOpen ? setMenuStyle("menuOpen") : setMenuStyle("menuClose")
+   }, [menuOpen])
 
     return (
         <div>
@@ -33,12 +27,15 @@ export const NavbarMobile = () => {
                         onClick={ () => setMenuOpen(!menuOpen) }
                         style={ Styles.menu }
                     >
-                        { menuOpen ? "X" : "=" }
+                        { 
+                            menuOpen ? <IoClose /> : <IoMenu /> 
+                        }
                     </button>
                     
-                    {
-                        handleMenuOptions()
-                    }
+                    <div className={ menuStyle } style={ Styles.menuContainer }>
+                        <a style={ Styles.navbarLink } href="#">Home</a>
+                        <a style={ Styles.navbarLink } href="#">Sobre</a>
+                    </div>
                     
                 </div>
             </div>

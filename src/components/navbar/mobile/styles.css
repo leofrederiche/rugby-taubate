@@ -1,0 +1,9 @@
+.menuOpen {
+    left: 0;
+    transition: 0.3s;
+}
+
+.menuClose {
+    left: 100%;
+    transition: 0.3s;
+}
