@@ -11,7 +11,8 @@ export const Styles = {
         alignItems: "center",
         justifyContent: "space-between",
         boxShadow: "0px 0px 6px rgba(0,0,0,0.6)",
-        height: "12vh",
+        height: 75,
+        zIndex: 100,
     },
 
     leftSide: {
@@ -19,7 +20,7 @@ export const Styles = {
     },
 
     logo: {
-        height: "12vh",
+        height: 75,
         float: "left",
         marginRight: 20,           
     },

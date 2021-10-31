@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { Styles } from "./styles"
-import LogoPng from "../../../assets/img/logo.png"
+import LogoPng from "../../../assets/img/logo.jpg"
 
 export const NavbarDesktop = () => {
     return (

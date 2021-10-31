@@ -1,0 +1,53 @@
+.header-contrast {
+    background-color: #000000;
+    height: 84vh;
+    overflow: hidden;
+    text-align: center;    
+}
+
+.header-contrast .header-background {
+    background-image: url("../../assets/img/contrast.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0.4;    
+}
+
+.header-contrast .header-content {
+    padding-top: 15%;    
+    float: left;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    top: -100%;
+    opacity: 1;
+    transition: 0.3s;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.header-contrast .header-content *{ 
+    width: 80%;
+}
+
+/* HOVER IN HEADER */
+
+.header-contrast:hover .header-background {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.header-contrast:hover .header-content {
+    
+    opacity: 1;
+}
+

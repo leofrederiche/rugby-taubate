@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { IoMenu, IoClose } from 'react-icons/io5';
 
 import { Styles } from "./styles"
-import LogoPng from "../../../assets/img/logo.png"
+import LogoPng from "../../../assets/img/logo.jpg"
 import {} from "./styles.css"
 
 export const NavbarMobile = () => {
