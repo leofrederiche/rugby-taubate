@@ -4,6 +4,7 @@ import { Route, BrowserRouter } from "react-router-dom"
 import { Home } from "./pages/home"
 import { About } from "./pages/about"
 import { Navbar } from "./components/navbar"
+import { Footer } from "./components/footer"
 //import Usuario from "./Usuario"
 
 const Routes = () => {
@@ -14,6 +15,7 @@ const Routes = () => {
             <Route component = { Home }  path="/" exact />
             <Route component = { About } path="/sobre" />
         </BrowserRouter>
+        <Footer />
        </div>
    )
 }

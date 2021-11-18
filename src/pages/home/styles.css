@@ -51,3 +51,25 @@
     opacity: 1;
 }
 
+.container {
+    padding: 20px 20%;
+}
+
+.container img {
+    min-width: 200px;
+    width: 60%;
+    padding: 5px;
+    border: 2px solid #777;
+}
+
+.container-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container-right {   
+    display: flex; 
+    align-items: end;
+    justify-content: end;
+}
