@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { IoMenu, IoClose } from 'react-icons/io5';
+import { Link } from "react-router-dom"
 
 import { Styles } from "./styles"
 import LogoPng from "../../../assets/img/logo.jpg"
@@ -33,8 +34,8 @@ export const NavbarMobile = () => {
                     </button>
                     
                     <div className={ menuStyle } style={ Styles.menuContainer }>
-                        <a style={ Styles.navbarLink } href="#">Home</a>
-                        <a style={ Styles.navbarLink } href="#">Sobre</a>
+                        <Link onClick={ () => setMenuOpen(!menuOpen) } style={ Styles.navbarLink } to="/">Home</Link>
+                        <Link onClick={ () => setMenuOpen(!menuOpen) } style={ Styles.navbarLink } to="/sobre">Sobre</Link>
                     </div>
                     
                 </div>

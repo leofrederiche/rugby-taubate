@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
 
 import { Styles } from "./styles"
 import LogoPng from "../../../assets/img/logo.jpg"
@@ -15,8 +16,8 @@ export const NavbarDesktop = () => {
 
                 {/* Right side */}
                 <div style={ Styles.rightSide }>                    
-                    <a style={Styles.navbarLink} href="#">Home</a>
-                    <a style={ Styles.navbarLink } href="#">Sobre</a>
+                    <Link style={Styles.navbarLink} to="/">Home</Link>
+                    <Link style={ Styles.navbarLink } to="/sobre">Sobre</Link>
                 </div>
             </div>
         </div>

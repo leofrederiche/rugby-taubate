@@ -10,8 +10,9 @@ import { Footer } from "./components/footer"
 const Routes = () => {
    return(
        <div style={{ paddingTop: 95 }}>
-        <Navbar />
         <BrowserRouter>
+            <Navbar />
+
             <Route component = { Home }  path="/" exact />
             <Route component = { About } path="/sobre" />
         </BrowserRouter>
