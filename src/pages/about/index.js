@@ -3,11 +3,12 @@ import React from 'react'
 import firstGameImg from "../../assets/img/home_1.jpg"
 
 import { ContainerStyles } from "../../components/container/styles"
+import { styles } from "./styles"
 
 export const About = () => {
     return(
-        <div style={ ContainerStyles.container }>
-            <header>
+        <div style={ Object.assign({}, ContainerStyles.container, styles.container) }>
+            <header style={ styles.header }>
                 <h1>Sobre nós</h1>
 
                 <p>
@@ -16,8 +17,8 @@ export const About = () => {
                 </p>
             </header>
 
-            <div className="time-step time-left">
-                <span>Inicio - Fevereiro de 2017</span>
+            <div style={ styles.timeStepLeft }>
+                <span style={ styles.timeStepDate }><i>Inicio - Fevereiro de 2017</i></span>
 
                 <p>
                     Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e 
@@ -27,10 +28,15 @@ export const About = () => {
                 </p>
             </div>
 
-            <div className="time-step time-right">
-                <span>O primeiro jogo</span>
+            <div style={ styles.timeStepRight }>
+                <span style={ styles.timeStepDate }><i>O primeiro jogo - Março de 2017</i></span>
 
-                <img style={ ContainerStyles.containerImg } src={firstGameImg} alt="Primeiro Jogo" />
+                <img style={ Object.assign({}, ContainerStyles.containerImg, styles.timeStepImg) } src={firstGameImg} alt="Primeiro Jogo" />
+
+                <p>
+                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e 
+                    de impresso.
+                </p>
             </div>
         </div>
     )
