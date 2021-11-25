@@ -1,9 +1,7 @@
-.header-contrast {
-    background-color: #000000;
-    height: 84vh;
-    overflow: hidden;
-    text-align: center;    
-}
+/* 
+    THIS FILE IS GLOBAL
+    It's enable to all Pages
+*/
 
 .header-contrast .header-background {
     background-image: url("../../assets/img/contrast.jpg");
@@ -40,37 +38,11 @@
 }
 
 /* HOVER IN HEADER */
-
 .header-contrast:hover .header-background {
     opacity: 0.5;
     transform: scale(1.2);
 }
 
-.header-contrast:hover .header-content {
-    
+.header-contrast:hover .header-content {    
     opacity: 1;
-}
-
-.container {
-    padding: 20px 20%;
-}
-
-.container img {
-    min-width: 200px;
-    width: 60%;
-    padding: 5px;
-    border: 2px solid #777;
-    margin: 40px 20px;
-}
-
-.container-left {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.container-right {   
-    display: flex; 
-    align-items: end;
-    justify-content: end;
 }

@@ -1,13 +1,15 @@
 import React from 'react'
 
-import {} from "./styles.css"
+import "./styles.css"
 import home1 from "../../assets/img/home_1.jpg"
 import home2 from "../../assets/img/home_2.jpg"
+import { styles } from './styles'
+import { ContainerStyles } from '../../components/container/styles'
 
 export const Home = () => {
     return (
         <div>
-            <div className="header-contrast">
+            <div style={ styles.headerContrast } className="header-contrast">
                 <div className="header-background">
                     {
                         //<img src={ contrastImage } className="header-image" />
@@ -26,7 +28,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="container">
+            <div style={ ContainerStyles.container } className="container">
                 <h1>Loren Inpulse</h1>
 
                 <p>
@@ -38,8 +40,8 @@ export const Home = () => {
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
-                <div className="container-left">
-                    <img src={home1} alt="Jogando Rugby" />
+                <div style={ ContainerStyles.containerLeft } >
+                    <img style={ ContainerStyles.containerImg } src={home1} alt="Jogando Rugby" />
                 </div>
                 
 
@@ -52,8 +54,8 @@ export const Home = () => {
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 
-                <div className="container-right">
-                    <img src={home2} alt="Jogando Rugby Denovo" className="right" />
+                <div style={ ContainerStyles.containerRight }>
+                    <img style={ ContainerStyles.containerImg } src={home2} alt="Jogando Rugby Denovo" />
                 </div>
             </div>
         </div>

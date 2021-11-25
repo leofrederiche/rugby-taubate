@@ -1,10 +1,10 @@
 import React from 'react'
 
-import {} from "./styles.css"
+import { styles } from "./styles"
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <div style={ styles.footer } >
             <label>Taubaté Rugby - 2021</label>
         </div>
     )
